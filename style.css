@@ -1,37 +1,42 @@
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(180deg, #0f2027, #203a43);
-    color: #f2f2f2;
+    background: linear-gradient(180deg, #0b3c49, #155e63);
+    color: #f8f9f7;
     margin: 0;
     padding: 0;
 }
 
 header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 70px 20px 50px;
 }
 
 header h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size: 50px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
 }
 
 .subtitle {
     font-size: 18px;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 16px;
-    padding: 30px;
-    max-width: 700px;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 18px;
+    padding: 32px;
+    max-width: 720px;
     margin: 30px auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
 }
 
 .card h2 {
     margin-top: 0;
+    color: #ffd166;
 }
 
 ul {
@@ -41,25 +46,26 @@ ul {
 
 ul li {
     font-size: 18px;
-    margin: 12px 0;
+    margin: 14px 0;
 }
 
 .download-btn {
     display: inline-block;
-    margin-top: 15px;
-    padding: 15px 30px;
-    background: #ffb703;
+    margin-top: 18px;
+    padding: 16px 34px;
+    background: linear-gradient(135deg, #ffb703, #ff9f1c);
     color: #1a1a1a;
     text-decoration: none;
     font-size: 18px;
-    border-radius: 30px;
+    border-radius: 40px;
     font-weight: bold;
+    box-shadow: 0 8px 25px rgba(255, 183, 3, 0.35);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .download-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 183, 3, 0.45);
 }
 
 .version {
@@ -67,19 +73,20 @@ ul li {
 }
 
 .note {
-    margin-top: 15px;
+    margin-top: 16px;
     font-size: 14px;
-    opacity: 0.7;
+    opacity: 0.75;
 }
 
 footer {
     text-align: center;
-    padding: 30px 10px;
+    padding: 35px 10px 25px;
     font-size: 14px;
-    opacity: 0.7;
+    opacity: 0.75;
 }
 
 .license {
     font-size: 12px;
     margin-top: 6px;
+    opacity: 0.6;
 }
